@@ -294,10 +294,6 @@ thumbl  { gpios = <&gpio2 RK_PB5 GPIO_ACTIVE_LOW>; };
 thumbr  { gpios = <&gpio2 RK_PB6 GPIO_ACTIVE_LOW>; };
 };
 
-&dmc {
-	center-supply = <&vdd_logic>;
-};
-
 &cpu0 {
 	cpu-supply = <&vdd_arm>;
 };

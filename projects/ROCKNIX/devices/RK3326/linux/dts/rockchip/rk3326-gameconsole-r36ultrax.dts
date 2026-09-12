@@ -400,10 +400,6 @@
 	};
 };
 
-&dmc {
-	center-supply = <&vdd_logic>;
-};
-
 &cpu0 {
 	cpu-supply = <&vdd_arm>;
 };
