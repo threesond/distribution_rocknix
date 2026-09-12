@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2026-present ROCKNIX (https://github.com/ROCKNIX)
+
+# PanVK is experimental on non-conformant GPUs (e.g. Mali-G31 in RK3326) and
+# refuses to load by default without this variable.
+# See https://docs.mesa3d.org/drivers/panfrost.html
+if [ -f /usr/lib/libvulkan_panfrost.so ] || [ -f /usr/lib32/libvulkan_panfrost.so ]; then
+  export PAN_I_WANT_A_BROKEN_VULKAN_DRIVER=1
+fi

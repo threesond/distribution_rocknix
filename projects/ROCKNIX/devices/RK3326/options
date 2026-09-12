@@ -48,6 +48,12 @@
   # For maximum cross compatbility
     PREFER_GLES="yes"
 
+  # VULKAN_SUPPORT
+    VULKAN_SUPPORT="yes"
+
+  # Vulkan implementation to use (vulkan-loader / no)
+    VULKAN="vulkan-loader"
+
   # Displayserver to use (wl / no)
     DISPLAYSERVER="wl"
 
@@ -66,7 +72,7 @@
     FIRMWARE="esp8089-firmware"
   
   # Additional packages to install
-    ADDITIONAL_PACKAGES="device-switch libmali generic-dsi rk3326-dtb-select"
+    ADDITIONAL_PACKAGES="device-switch libmali generic-dsi rk3326-dtb-select vulkan-tools"
     ADDITIONAL_PACKAGES_32BIT="libmali"
 
   # Debug tty path
