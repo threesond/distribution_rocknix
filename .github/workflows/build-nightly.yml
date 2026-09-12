@@ -82,6 +82,11 @@ on:
   pull_request:
     types: [ opened, synchronize, reopened, edited ]
 
+permissions:
+  actions: write
+  contents: read
+  packages: write
+
 jobs:
   set-envs:
     if: (github.event_name != 'schedule') || (github.repository == 'AveyondFly/distribution_rocknix' && github.ref_name == 'next')

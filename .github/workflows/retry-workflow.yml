@@ -5,6 +5,8 @@ on:
     inputs:
       run_id:
         required: true
+permissions:
+  actions: write
 jobs:
   rerun:
     runs-on: ubuntu-24.04
